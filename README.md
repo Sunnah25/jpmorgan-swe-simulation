@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # JPMorgan Chase Software Engineering Simulation
 
 A backend financial transaction processing system built as part of the JPMorgan Chase Advanced Software Engineering virtual experience on Forage.
@@ -138,4 +137,3 @@ Built a `BalanceController` using `@RestController` and `@GetMapping` to expose 
 - **RESTful APIs** — both consuming (Incentive API) and producing (`/balance` endpoint)
 - **Data persistence** — JPA/Hibernate mapping Java objects to database tables
 - **Financial validation** — balance checks before processing transactions
->>>>>>> 336acb93a68dc74757c6742b8ec5e2f1cd6cf81e
