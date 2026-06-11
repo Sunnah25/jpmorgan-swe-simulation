@@ -128,6 +128,24 @@ Integrated with the `transaction-incentive-api` service using `RestTemplate` to 
 ### Task 5 — Exposing a REST API
 Built a `BalanceController` using `@RestController` and `@GetMapping` to expose a `GET /balance?userId=X` endpoint on port 33400. Other services can now query user balances in real time.
 
+## API Testing
+
+A Postman collection is included in the root of this project: `midas-core-api.postman_collection.json`
+
+Import it into Postman to test the endpoints directly.
+
+### Available Endpoints
+
+| Method | URL | Description |
+|--------|-----|-------------|
+| GET | `/balance?userId={id}` | Get current balance for a user |
+
+### Running the app locally for manual testing
+1. Start the Incentive API: `java -jar services/transaction-incentive-api.jar`
+2. Start Midas Core: `./mvnw.cmd spring-boot:run`
+3. Import the Postman collection and send requests
+
+
 **Key learning:** Building REST endpoints with Spring MVC, `@RequestParam`, automatic JSON serialisation of return values, and how services expose data to the outside world.
 
 ## Key Concepts Demonstrated
