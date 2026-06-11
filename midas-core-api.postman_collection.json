@@ -1,0 +1,89 @@
+{
+  "info": {
+    "_postman_id": "6a217b9e-f6d5-4a52-a0f6-f83a4b17e03f",
+    "name": "Midas Core API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54103732",
+    "_collection_link": "https://go.postman.co/collection/54103732-6a217b9e-f6d5-4a52-a0f6-f83a4b17e03f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Balance - Valid User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:33400/balance?userId=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "33400",
+          "path": [
+            "balance"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Balance - User Not Found",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:33400/balance?userId=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "33400",
+          "path": [
+            "balance"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Check Incentive",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"senderId\": 1,\r\n    \"recipientId\": 2,\r\n    \"amount\": 100.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/incentive",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "incentive"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
