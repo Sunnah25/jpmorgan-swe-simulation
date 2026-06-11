@@ -21,6 +21,7 @@ spring:
 
 general:
   kafka-topic: transactions
+  incentive-api-url: http://localhost:8080/incentive
 
 server:
   port: 33400

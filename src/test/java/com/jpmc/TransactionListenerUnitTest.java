@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.web.client.RestTemplate;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
@@ -17,6 +18,9 @@ public class TransactionListenerUnitTest {
 
     @Mock
     private UserRepository userRepository;
+
+    @Mock
+    private RestTemplate restTemplate;
 
     @InjectMocks
     private TransactionListener transactionListener;
