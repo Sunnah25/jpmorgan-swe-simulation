@@ -1,3 +1,5 @@
+[![CI](https://github.com/Sunnah25/jpmorgan-swe-simulation/actions/workflows/ci.yml/badge.svg)](https://github.com/Sunnah25/jpmorgan-swe-simulation/actions/workflows/ci.yml)
+
 # JPMorgan Chase Software Engineering Simulation
 
 A backend financial transaction processing system built as part of the JPMorgan Chase Advanced Software Engineering virtual experience on Forage.
